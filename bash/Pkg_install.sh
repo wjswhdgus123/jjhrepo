@@ -18,3 +18,5 @@ done
 fi
 
 }
+
+PKG_INSTALL
