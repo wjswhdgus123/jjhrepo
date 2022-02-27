@@ -2,8 +2,9 @@
 
 function PKG_INSTALL {
 LISTDIR=$GitDIR/bash/pkglist
+#LISTDIR=/root/
 dnf install -y epel-release 
-dnf install -y sysstat net-tool fping curl wget bind-utils net-snmp net-snmp-utils strace lsof 
+dnf install -y sysstat net-tools fping curl wget bind-utils net-snmp net-snmp-utils strace lsof vim chrony
 
 if [ ! -e $LISTDIR -o "-s" "$LISTDIR" ]; then 
 

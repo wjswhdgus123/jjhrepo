@@ -20,4 +20,4 @@ GitStting
 cd $GitDIR/$Repo/$ScriptsDIR
 pwd
 sh Pkg_install.sh
-
+sh default.sh
