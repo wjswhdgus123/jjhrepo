@@ -84,3 +84,10 @@ echo "HOSTNAME volume is Null"
 fi
 
 }
+
+function Resource {
+
+
+
+}
+
