@@ -101,9 +101,9 @@ fi
  Check=$(cat /etc/crontab |grep -w '/usr/bin/sar')
 
  if [ -z "$Check" ] ; then
- echo "0 * * * * root /usr/bin/sa 60 60  -o $LOGDIR/sar_CPU" >> /etc/crontab
- echo "0 * * * * root /usr/bin/sa -F 600 6  -o $LOGDIR/sar_DISK" >> /etc/crontab
- echo "0 * * * * root /usr/bin/sa -r 60 60  -o $LOGDIR/sar_DISK" >> /etc/crontab
+ echo "0 * * * * root /usr/bin/sar 60 60  -o $LOGDIR/sar_CPU" >> /etc/crontab
+ echo "0 * * * * root /usr/bin/sar -F 600 6  -o $LOGDIR/sar_DISK" >> /etc/crontab
+ echo "0 * * * * root /usr/bin/sar -r 60 60  -o $LOGDIR/sar_DISK" >> /etc/crontab
  else
 
  echo 
